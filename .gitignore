@@ -1,0 +1,17 @@
+# IDE and Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Obsidian (optional - comment out if using)
+# .obsidian/
+
+# Notion cache (if exporting)
+# .notion-cache/
+
+# Temporary files
+*.tmp
+*.bak
