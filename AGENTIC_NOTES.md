@@ -44,6 +44,46 @@ When expanding this repo with new topics:
 - Batch URI research sessions into single commits: "Add: Research round - <date>"
 - Tag milestones: `v1-initial-scaffold`, `research-<month>-<year>`
 
+## Operational Guidelines for URI Processing (Updated 2026-06-12)
+
+### No Confirmation Blocking
+
+**Agent should write topics directly to the repository without requiring user confirmation prompts.** This prevents credit waste and keeps research momentum flowing. Only request confirmation in edge cases or when fundamental decisions cannot be made.
+
+### Auto-Scan for Context
+
+When processing URIs:
+- Scan GitHub repositories to understand actual content and purpose
+- Read READMEs, documentation, and key files to determine accurate categorization
+- Extract relevant technical details for topic files
+- Identify cross-topic connections and relationships
+
+### Smart Categorization
+
+Place topics in the most appropriate category based on actual content analysis:
+- **Software**: Programming frameworks, tools, libraries, development utilities, supply-chain security, agentic systems
+- **Hardware**: Physical infrastructure, homelab, devices, monitoring systems, Proxmox ecosystem
+- **Automotive**: Vehicle-related projects, GPS tracking, transportation tech
+- **Home**: Home automation, smart home, home infrastructure
+- **General**: Cross-cutting, miscellaneous, foundational research
+
+### Deferred Decisions
+
+When confident categorization isn't possible:
+- Create a pull request instead of making uncertain commits
+- Include analysis and proposed category in PR description
+- Let user review and decide final placement
+
+### URI Batch Processing
+
+When given a batch of URIs:
+1. Process each independently without intermediate summaries
+2. Scan for context if needed (read README, key files)
+3. Determine correct category based on content
+4. Create topic file with full details (metadata, overview, key points, resources, evaluation framework)
+5. Commit directly without confirmation
+6. Provide single summary of batch when complete
+
 ## Future Agent Context
 
 **This repo will benefit from automated workflows:**
@@ -53,5 +93,6 @@ When expanding this repo with new topics:
 - Identify orphaned topics (no backlinks)
 - Cross-reference similar topics by title/tags
 - Generate project readiness reports from topic coverage
+- Automated agentic response workflows using Pi.dev framework
 
 **Preserve structure** to enable these workflows without manual intervention.
