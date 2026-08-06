@@ -2,6 +2,8 @@
 
 ## Automation/Infrastructure
 - [ansible-nas](https://github.com/davestephens/ansible-nas)
+- [apple/container](https://github.com/apple/container)
+- [innovation-sandbox-on-aws](https://github.com/aws-solutions/innovation-sandbox-on-aws)
 
 ## Presentation/Slide
 - [open-slide](https://github.com/1weiho/open-slide)
@@ -14,6 +16,7 @@
 
 ## Hardware/Emulator
 - [Battery-Emulator](https://github.com/dalathegreat/Battery-Emulator)
+- [Tildagon Badge](https://tildagon.badge.emfcamp.org/)  # EMF Camp 2024 hardware badge
 
 ## Terminal/Drawing
 - [termdraw](https://github.com/benvinegar/termdraw)
@@ -52,6 +55,8 @@
 
 ## Games/Misc
 - [tolaria](https://github.com/refactoringhq/tolaria)
+- [emfight-server](https://github.com/JonTheNiceGuy/emfight-server)  # EMF Camp game server
+- [emfight-docs](https://github.com/JonTheNiceGuy/emfight-docs)    # EMF Camp game documentation
 
 ## AI/Prompts
 - [system-prompts-and-models-of-ai-tools](https://github.com/x1xhlol/system-prompts-and-models-of-ai-tools)
@@ -64,3 +69,7 @@
 
 ## Project Management
 - [pm-skills](https://github.com/phuryn/pm-skills)
+
+## Productivity/Dashboard
+- [glance](https://github.com/glanceapp/glance)  # Self-hosted dashboard
+- [cto.new](https://cto.new/)                    # URL shortener/creation tool
