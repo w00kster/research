@@ -19,6 +19,7 @@ System for monitoring SolarEdge photovoltaic installations using credentials-bas
 - [Playwright Documentation](https://playwright.dev) - Browser automation framework
 - [GitHub Actions Documentation](https://docs.github.com/en/actions) - CI/CD for scheduled tasks
 - [GitHub Pages Documentation](https://docs.github.com/en/pages) - Free hosting for visualization
+- [SolarEdge Monitor Implementation](https://github.com/w00kster/solaredge-monitor) - Open source implementation of this monitoring system
 
 ## Related Topics
 - [[pulse-pve-monitoring]] - Similar Proxmox monitoring approach
