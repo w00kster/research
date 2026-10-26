@@ -6,6 +6,9 @@ Centralized collection of useful links organized by category. These are referenc
 
 ### Software Development
 
+- [RUNTIME tutorials / Laya](https://github.com/Runtime-weekly/runtime-tutorials/tree/main/laya) — Practical local tutorial for the Laya decision model and classification workflow
+- [Headroom](https://github.com/headroomlabs-ai/headroom) — Context compression and retrieval layer for AI agents and LLM pipelines
+- [RTK](https://github.com/rtk-ai/rtk) — CLI proxy for filtering and compressing command output before it reaches the model
 - [T3 Code](https://github.com/pingdotgg/t3code) — Agent harness control surface for managing coding agents across local, remote, and mobile interfaces
 - [LLM Bus](https://llm-bus.com/) — Shared-space coordination model for teams and AI agents, adjacent to agent harness and tailnet-aware remote workflows
 - [LLM Bus - Shared Space for Teams and AI](https://llm-bus.com/) — Conceptual model for agent coordination, shared context, and team-mediated decision workflows
