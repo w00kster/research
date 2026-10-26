@@ -6,7 +6,9 @@ Centralized collection of useful links organized by category. These are referenc
 
 ### Software Development
 
-- [Placeholder for software links]
+- [RUNTIME tutorials / Laya](https://github.com/Runtime-weekly/runtime-tutorials/tree/main/laya) — Practical local tutorial for the Laya decision model and classification workflow
+- [Headroom](https://github.com/headroomlabs-ai/headroom) — Context compression and retrieval layer for AI agents and LLM pipelines
+- [RTK](https://github.com/rtk-ai/rtk) — CLI proxy for filtering and compressing command output before it reaches the model
 
 ### Hardware & Embedded Systems
 
