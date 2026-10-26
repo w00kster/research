@@ -1,0 +1,135 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="900" viewBox="0 0 1400 900" role="img" aria-labelledby="title desc">
+  <title id="title">LLM Bus architecture reference</title>
+  <desc id="desc">A conceptual architecture diagram showing a user, team chat, AI agents, a shared service bus, Tailscale, GitHub, and remote infrastructure.</desc>
+  <defs>
+    <style>
+      .bg { fill: #f5f6f7; }
+      .panel { fill: #f0f4f3; stroke: #8aa8a4; stroke-width: 2; }
+      .light { fill: #eef2f3; stroke: #7a8288; stroke-width: 1.5; }
+      .dark { fill: #2d333a; }
+      .text { fill: #1d242b; font-family: "Segoe UI", Arial, sans-serif; }
+      .small { font-size: 18px; }
+      .mid { font-size: 22px; font-weight: 600; }
+      .title { font-size: 24px; font-weight: 700; }
+      .mono { font-family: "SFMono-Regular", Consolas, monospace; }
+      .solid { stroke: #2d333a; stroke-width: 2; fill: none; }
+      .thin { stroke: #708088; stroke-width: 1.6; fill: none; }
+      .dash { stroke: #9b9b7c; stroke-width: 1.8; fill: none; stroke-dasharray: 8 8; }
+      .teal { stroke: #1f9f9b; fill: none; stroke-width: 2.2; }
+      .tealfill { fill: #dff3f0; stroke: #1f9f9b; stroke-width: 2; }
+      .greenfill { fill: #e9f4ee; stroke: #5c7d6f; stroke-width: 2; }
+      .warnfill { fill: #f4f1e3; stroke: #b39a62; stroke-width: 2; }
+      .note { fill: #f7f7f3; stroke: #c9c8b3; stroke-width: 2; }
+      .arrow { marker-end: url(#arrow); }
+    </style>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+      <path d="M0,0 L12,6 L0,12 z" fill="#2d333a"/>
+    </marker>
+  </defs>
+
+  <rect class="bg" x="0" y="0" width="1400" height="900"/>
+
+  <!-- main left board -->
+  <rect class="panel" x="30" y="70" width="500" height="735" rx="14"/>
+  <text class="title text" x="70" y="110">Telegram</text>
+  <text class="small text" x="70" y="136">DM • DRD Projects group</text>
+
+  <rect class="light" x="80" y="220" width="190" height="90" rx="8"/>
+  <text class="mid text" x="175" y="275" text-anchor="middle">Caddy edge</text>
+  <text class="small mono text" x="175" y="295" text-anchor="middle">Odin</text>
+
+  <rect class="light" x="310" y="220" width="170" height="90" rx="8"/>
+  <text class="mid text" x="395" y="275" text-anchor="middle">Hermes gateway</text>
+  <text class="small mono text" x="395" y="295" text-anchor="middle">Odin</text>
+
+  <rect class="light" x="110" y="380" width="190" height="100" rx="8"/>
+  <text class="mid text" x="205" y="435" text-anchor="middle">llm-proxy</text>
+  <text class="small mono text" x="205" y="455" text-anchor="middle">watcher</text>
+
+  <rect class="light" x="310" y="380" width="170" height="100" rx="8"/>
+  <text class="mid text" x="395" y="435" text-anchor="middle">drd-status</text>
+  <text class="small mono text" x="395" y="455" text-anchor="middle">sentinel</text>
+
+  <rect class="light" x="110" y="540" width="170" height="90" rx="8"/>
+  <text class="mid text" x="195" y="590" text-anchor="middle">odina-secrets</text>
+  <text class="small mono text" x="195" y="610" text-anchor="middle">/run/odina/*</text>
+
+  <rect class="light" x="320" y="540" width="150" height="90" rx="8"/>
+  <text class="mid text" x="395" y="590" text-anchor="middle">Disk snapshots</text>
+  <text class="small mono text" x="395" y="610" text-anchor="middle">daily • 30 days</text>
+
+  <rect class="light" x="105" y="670" width="180" height="90" rx="8"/>
+  <text class="mid text" x="195" y="720" text-anchor="middle">Secret Manager</text>
+  <text class="small mono text" x="195" y="740" text-anchor="middle">all our secrets</text>
+
+  <rect class="light" x="315" y="670" width="170" height="90" rx="8"/>
+  <text class="mid text" x="400" y="720" text-anchor="middle">gcloud</text>
+  <text class="small mono text" x="400" y="740" text-anchor="middle">//</text>
+
+  <!-- center board -->
+  <rect class="panel" x="575" y="80" width="610" height="710" rx="14"/>
+  <text class="title text" x="820" y="120" text-anchor="middle">Daniel</text>
+  <rect class="light" x="685" y="170" width="290" height="90" rx="8"/>
+  <text class="mid text" x="830" y="215" text-anchor="middle">Claude Code</text>
+
+  <rect class="tealfill" x="607" y="290" width="260" height="130" rx="10"/>
+  <text class="mid text" x="737" y="340" text-anchor="middle">LLM Bus</text>
+  <text class="small mono text" x="737" y="365" text-anchor="middle">/api/wait, token file</text>
+  <text class="small mono text" x="737" y="388" text-anchor="middle">yolo</text>
+
+  <rect class="light" x="905" y="290" width="240" height="120" rx="10"/>
+  <text class="mid text" x="1025" y="340" text-anchor="middle">Laptop</text>
+  <text class="small mono text" x="1025" y="365" text-anchor="middle">Claude Code, attended</text>
+  <text class="small mono text" x="1025" y="388" text-anchor="middle">bus: ai-claude-daniel</text>
+
+  <rect class="light" x="628" y="460" width="250" height="110" rx="10"/>
+  <text class="mid text" x="753" y="510" text-anchor="middle">Postgres</text>
+  <text class="small mono text" x="753" y="535" text-anchor="middle">/opt/drd</text>
+
+  <rect class="light" x="915" y="460" width="240" height="110" rx="10"/>
+  <text class="mid text" x="1035" y="510" text-anchor="middle">Tailscale</text>
+  <text class="small mono text" x="1035" y="535" text-anchor="middle">system daemon, root</text>
+
+  <rect class="light" x="630" y="610" width="250" height="120" rx="10"/>
+  <text class="mid text" x="755" y="655" text-anchor="middle">GitHub</text>
+  <text class="small mono text" x="755" y="680" text-anchor="middle">every repo, one per project</text>
+
+  <rect class="warnfill" x="915" y="606" width="240" height="124" rx="10"/>
+  <text class="mid text" x="1035" y="655" text-anchor="middle">Google shared drive</text>
+  <text class="small mono text" x="1035" y="680" text-anchor="middle">DRD Projects • Odina Contributor</text>
+
+  <!-- right board -->
+  <rect class="panel" x="1210" y="120" width="155" height="660" rx="14"/>
+  <text class="title text" x="1287" y="160" text-anchor="middle">Tonsberg</text>
+  <text class="small mono text" x="1287" y="185" text-anchor="middle">mac mini • home</text>
+
+  <rect class="greenfill" x="1230" y="220" width="120" height="100" rx="10"/>
+  <text class="mid text" x="1290" y="270" text-anchor="middle">dispatcher 0.4.0</text>
+
+  <rect class="greenfill" x="1230" y="380" width="120" height="100" rx="10"/>
+  <text class="mid text" x="1290" y="430" text-anchor="middle">Claude lead sessions</text>
+
+  <rect class="light" x="1230" y="540" width="120" height="100" rx="10"/>
+  <text class="mid text" x="1290" y="590" text-anchor="middle">Tailscale</text>
+
+  <!-- connect flows -->
+  <path class="solid arrow" d="M 180 240 L 310 240"/>
+  <path class="solid arrow" d="M 410 310 L 410 380"/>
+  <path class="solid arrow" d="M 570 210 L 685 210"/>
+  <path class="solid arrow" d="M 780 260 L 780 290"/>
+  <path class="solid arrow" d="M 840 360 L 905 360"/>
+  <path class="solid arrow" d="M 980 410 L 980 460"/>
+  <path class="solid arrow" d="M 1035 570 L 1035 606"/>
+  <path class="solid arrow" d="M 760 570 L 760 610"/>
+  <path class="solid arrow" d="M 760 730 L 915 730"/>
+  <path class="solid arrow" d="M 580 720 L 465 720"/>
+  <path class="dash" d="M 815 170 L 815 760"/>
+
+  <!-- text hints -->
+  <text class="small mono text" x="620" y="245">chat with Odin</text>
+  <text class="small mono text" x="830" y="265">Board, as himself</text>
+  <text class="small mono text" x="905" y="445">ssh + deploy</text>
+  <text class="small mono text" x="870" y="565">Tailscale</text>
+  <text class="small mono text" x="922" y="785">Google Drive app</text>
+
+</svg>
